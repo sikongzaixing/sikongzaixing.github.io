@@ -44,6 +44,13 @@
   </url>
   
   <url>
+    <loc>http://localhost:4000/tags/index2.html</loc>
+    
+    <lastmod>2019-06-01T10:07:47.543Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://localhost:4000/2019/06/01/hello/</loc>
     
     <lastmod>2019-06-01T08:02:15.925Z</lastmod>
