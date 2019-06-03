@@ -8,7 +8,7 @@
       <link href="/2019/06/04/test/"/>
       <url>/2019/06/04/test/</url>
       
-        <content type="html"><![CDATA[<h1 id="这个是测试"><a href="#这个是测试" class="headerlink" title="这个是测试"></a>这个是测试</h1><p><img src="/.io//test.png" alt="image"></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="这个是测试"><a href="#这个是测试" class="headerlink" title="这个是测试"></a>这个是测试</h1><p><img src="//localhost:4000/2019/06/04/test/test.png" alt="image"></p>]]></content>
       
       
       
