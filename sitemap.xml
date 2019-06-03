@@ -4,7 +4,21 @@
   <url>
     <loc>http://localhost:4000/404/index.html</loc>
     
-    <lastmod>2019-06-01T10:11:17.633Z</lastmod>
+    <lastmod>2019-06-03T06:02:33.671Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/tags/index.html</loc>
+    
+    <lastmod>2019-06-03T04:04:44.660Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/categories/index.html</loc>
+    
+    <lastmod>2019-06-03T03:58:44.523Z</lastmod>
     
   </url>
   
@@ -12,13 +26,6 @@
     <loc>http://localhost:4000/schedule/index.html</loc>
     
     <lastmod>2019-06-01T10:11:07.782Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://localhost:4000/categories/index.html</loc>
-    
-    <lastmod>2019-06-01T10:10:33.742Z</lastmod>
     
   </url>
   
@@ -33,27 +40,6 @@
     <loc>http://localhost:4000/about/index.html</loc>
     
     <lastmod>2019-06-01T10:08:36.744Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://localhost:4000/tags/index.html</loc>
-    
-    <lastmod>2019-06-01T10:07:47.543Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://localhost:4000/tags/index2.html</loc>
-    
-    <lastmod>2019-06-01T10:07:47.543Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://localhost:4000/2019/06/01/hello/</loc>
-    
-    <lastmod>2019-06-01T08:02:15.925Z</lastmod>
     
   </url>
   
