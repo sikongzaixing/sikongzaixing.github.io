@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://sikongzaixing.github.io/about/index.html</loc>
+    
+    <lastmod>2019-06-04T08:30:09.072Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://sikongzaixing.github.io/2019/06/04/sublime2markdown/</loc>
     
-    <lastmod>2019-06-04T05:47:03.503Z</lastmod>
+    <lastmod>2019-06-04T08:21:34.717Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://sikongzaixing.github.io/2019/06/04/test/</loc>
     
-    <lastmod>2019-06-04T05:46:50.823Z</lastmod>
+    <lastmod>2019-06-04T08:17:56.171Z</lastmod>
     
   </url>
   
@@ -47,13 +54,6 @@
     <loc>https://sikongzaixing.github.io/archives/index.html</loc>
     
     <lastmod>2019-06-01T10:09:05.251Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://sikongzaixing.github.io/about/index.html</loc>
-    
-    <lastmod>2019-06-01T10:08:36.744Z</lastmod>
     
   </url>
   
