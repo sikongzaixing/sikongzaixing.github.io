@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="测试实例:  插件安装与配置,首先我们需要安装一个图片路径转换的插件，这个插件名字是 hexo-asset-image ​    sudo npm install https://github.com/CodeFalling/hexo-asset-image --save 核心部分,需要修改 index.js文件dddddddddddddddsdfsgsdggdfh 打开_config.yml文件">
+<meta name="description" content="测试实例:  插件安装与配置,首先我们需要安装一个图片路径转换的插件，这个插件名字是 hexo-asset-image ​    sudo npm install https://github.com/CodeFalling/hexo-asset-image --save 核心部分,需要修改 index.js文件&amp;apos;use strict&amp;apos;; var cheerio = requi">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo 加入图片无法显示--解决方案">
 <meta property="og:url" content="https://sikongzaixing.github.io/2019/06/04/test/index.html">
 <meta property="og:site_name" content="司空在星的博客">
-<meta property="og:description" content="测试实例:  插件安装与配置,首先我们需要安装一个图片路径转换的插件，这个插件名字是 hexo-asset-image ​    sudo npm install https://github.com/CodeFalling/hexo-asset-image --save 核心部分,需要修改 index.js文件dddddddddddddddsdfsgsdggdfh 打开_config.yml文件">
+<meta property="og:description" content="测试实例:  插件安装与配置,首先我们需要安装一个图片路径转换的插件，这个插件名字是 hexo-asset-image ​    sudo npm install https://github.com/CodeFalling/hexo-asset-image --save 核心部分,需要修改 index.js文件&amp;apos;use strict&amp;apos;; var cheerio = requi">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://sikongzaixing.github.io/2019/06/04/test/test.png">
-<meta property="og:updated_time" content="2019-06-03T12:32:28.916Z">
+<meta property="og:updated_time" content="2019-06-04T04:20:24.586Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo 加入图片无法显示--解决方案">
-<meta name="twitter:description" content="测试实例:  插件安装与配置,首先我们需要安装一个图片路径转换的插件，这个插件名字是 hexo-asset-image ​    sudo npm install https://github.com/CodeFalling/hexo-asset-image --save 核心部分,需要修改 index.js文件dddddddddddddddsdfsgsdggdfh 打开_config.yml文件">
+<meta name="twitter:description" content="测试实例:  插件安装与配置,首先我们需要安装一个图片路径转换的插件，这个插件名字是 hexo-asset-image ​    sudo npm install https://github.com/CodeFalling/hexo-asset-image --save 核心部分,需要修改 index.js文件&amp;apos;use strict&amp;apos;; var cheerio = requi">
 <meta name="twitter:image" content="https://sikongzaixing.github.io/2019/06/04/test/test.png">
 
 
@@ -379,9 +379,69 @@
 <p><img src="//sikongzaixing.github.io/2019/06/04/test/test.png" alt="image"></p>
 <h5 id="插件安装与配置"><a href="#插件安装与配置" class="headerlink" title="插件安装与配置,"></a>插件安装与配置,</h5><p>首先我们需要安装一个图片路径转换的插件，这个插件名字是 <strong>hexo-asset-image</strong></p>
 <p>​    <code>sudo npm install https://github.com/CodeFalling/hexo-asset-image --save</code></p>
-<h5 id="核心部分-需要修改-index-js文件"><a href="#核心部分-需要修改-index-js文件" class="headerlink" title="核心部分,需要修改 index.js文件"></a>核心部分,需要修改 index.js文件</h5><p><code>dddddddddddddddsdfsgsdggdfh</code></p>
-<h5 id="打开-config-yml文件，修改下述内容"><a href="#打开-config-yml文件，修改下述内容" class="headerlink" title="打开_config.yml文件，修改下述内容"></a>打开_config.yml文件，修改下述内容</h5><p>​    <code>post_asset_folder: true</code></p>
-<p>​    <code>url: http://localhost:4000/</code>修改为对应的地址</p>
+<h5 id="核心部分-需要修改-index-js文件"><a href="#核心部分-需要修改-index-js文件" class="headerlink" title="核心部分,需要修改 index.js文件"></a>核心部分,需要修改 index.js文件</h5><pre><code>&apos;use strict&apos;;
+var cheerio = require(&apos;cheerio&apos;);
+
+// http://stackoverflow.com/questions/14480345/how-to-get-the-nth-occurrence-in-a-string
+function getPosition(str, m, i) {
+  return str.split(m, i).join(m).length;
+}
+
+var version = String(hexo.version).split(&apos;.&apos;);
+hexo.extend.filter.register(&apos;after_post_render&apos;, function(data){
+  var config = hexo.config;
+  if(config.post_asset_folder){
+    var link = data.permalink;
+  if(version.length &gt; 0 &amp;&amp; Number(version[0]) == 3)
+     var beginPos = getPosition(link, &apos;/&apos;, 1) + 1;
+  else
+    var beginPos = getPosition(link, &apos;/&apos;, 3) + 1;
+    // In hexo 3.1.1, the permalink of &quot;about&quot; page is like &quot;.../about/index.html&quot;.
+      var endPos = link.lastIndexOf(&apos;/&apos;) + 1;
+
+    link = link.substring(beginPos, endPos) ;
+    var toprocess = [&apos;excerpt&apos;, &apos;more&apos;, &apos;content&apos;];
+    for(var i = 0; i &lt; toprocess.length; i++){
+      var key = toprocess[i];
+
+      var $ = cheerio.load(data[key], {
+        ignoreWhitespace: false,
+        xmlMode: false,
+        lowerCaseTags: false,
+        decodeEntities: false
+      });
+
+      $(&apos;img&apos;).each(function(){
+        if ($(this).attr(&apos;src&apos;)){
+          // For windows style path, we replace &apos;\&apos; to &apos;/&apos;.
+          var src = $(this).attr(&apos;src&apos;).replace(&apos;\\&apos;, &apos;/&apos;);
+          if(!/http[s]*.*|\/\/.*/.test(src) &amp;&amp; !/^\s*\//.test(src)) {
+            // For &quot;about&quot; page, the first part of &quot;src&quot; can&apos;t be removed.
+            // In addition, to support multi-level local directory.
+            var linkArray = link.split(&apos;/&apos;).filter(function(elem){
+              return elem != &apos;&apos;;
+            });
+            var srcArray = src.split(&apos;/&apos;).filter(function(elem){
+              return elem != &apos;&apos; &amp;&amp; elem != &apos;.&apos;;
+            });
+            if(srcArray.length &gt; 1)
+            srcArray.shift();
+            src = srcArray.join(&apos;/&apos;);
+            $(this).attr(&apos;src&apos;, config.root + link + src);
+            console.info&amp;&amp;console.info(&quot;update link as:--&gt;&quot;+config.root + link + src);
+          }
+        }else{
+          console.info&amp;&amp;console.info(&quot;no src attr, skipped...&quot;);
+          console.info&amp;&amp;console.info($(this));
+        }
+      });
+      data[key] = $.html();
+    }
+  }
+});</code></pre><h5 id="打开-config-yml文件，修改下述内容"><a href="#打开-config-yml文件，修改下述内容" class="headerlink" title="打开_config.yml文件，修改下述内容"></a>打开_config.yml文件，修改下述内容</h5><p>​    <code>post_asset_folder: true</code><br>​    <code>url: http://localhost:4000/</code>修改为对应的地址</p>
+<!-- MarkdownTOC -->
+
+<!-- /MarkdownTOC -->
 
       
     </div>
@@ -415,6 +475,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/06/04/sublime2markdown/" rel="prev" title="Sublime Text 3 编写 Markdown">
+                Sublime Text 3 编写 Markdown <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -495,14 +559,32 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
           </nav>
