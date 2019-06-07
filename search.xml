@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>aboutcmake</title>
+      <link href="/2019/06/07/aboutcmake/"/>
+      <url>/2019/06/07/aboutcmake/</url>
+      
+        <content type="html"><![CDATA[<p>官方帮助文档:  <a href="https://cmake.org/cmake/help/v3.15/index.html" target="_blank" rel="noopener">https://cmake.org/cmake/help/v3.15/index.html</a></p><p>中文看这里 : <a href="https://www.hahack.com/codes/cmake/" target="_blank" rel="noopener">https://www.hahack.com/codes/cmake/</a></p><p>英文原版: <a href="https://cmake.org/cmake-tutorial/" target="_blank" rel="noopener">https://cmake.org/cmake-tutorial/</a></p><p>Python 版本: <a href="https://scons.org" target="_blank" rel="noopener">https://scons.org</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Sublime Text 3 编写 Markdown</title>
       <link href="/2019/06/04/sublime2markdown/"/>
       <url>/2019/06/04/sublime2markdown/</url>

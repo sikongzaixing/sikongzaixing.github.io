@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Sublime,">
+  <meta name="keywords" content="Hexo, NexT">
 
 
 
@@ -81,18 +81,17 @@
 
 
 
-<meta name="description" content="安装插件 :​        常规安装 : Markdown Preview , Markdown Editing, Markdown Extended  Windows: shift+ctrl+p   /  macOS :  shift+command+p 或者点击 Preference -&amp;gt; Package Control  调出命令面板, 再输入 install , 选择  Packa">
-<meta name="keywords" content="Sublime">
+<meta name="description" content="官方帮助文档:  https://cmake.org/cmake/help/v3.15/index.html 中文看这里 : https://www.hahack.com/codes/cmake/ 英文原版: https://cmake.org/cmake-tutorial/ Python 版本: https://scons.org">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Sublime Text 3 编写 Markdown">
-<meta property="og:url" content="https://sikongzaixing.github.io/2019/06/04/sublime2markdown/index.html">
+<meta property="og:title" content="aboutcmake">
+<meta property="og:url" content="https://sikongzaixing.github.io/2019/06/07/aboutcmake/index.html">
 <meta property="og:site_name" content="司空在星的博客">
-<meta property="og:description" content="安装插件 :​        常规安装 : Markdown Preview , Markdown Editing, Markdown Extended  Windows: shift+ctrl+p   /  macOS :  shift+command+p 或者点击 Preference -&amp;gt; Package Control  调出命令面板, 再输入 install , 选择  Packa">
+<meta property="og:description" content="官方帮助文档:  https://cmake.org/cmake/help/v3.15/index.html 中文看这里 : https://www.hahack.com/codes/cmake/ 英文原版: https://cmake.org/cmake-tutorial/ Python 版本: https://scons.org">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-06-04T08:21:34.717Z">
+<meta property="og:updated_time" content="2019-06-07T05:36:02.612Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Sublime Text 3 编写 Markdown">
-<meta name="twitter:description" content="安装插件 :​        常规安装 : Markdown Preview , Markdown Editing, Markdown Extended  Windows: shift+ctrl+p   /  macOS :  shift+command+p 或者点击 Preference -&amp;gt; Package Control  调出命令面板, 再输入 install , 选择  Packa">
+<meta name="twitter:title" content="aboutcmake">
+<meta name="twitter:description" content="官方帮助文档:  https://cmake.org/cmake/help/v3.15/index.html 中文看这里 : https://www.hahack.com/codes/cmake/ 英文原版: https://cmake.org/cmake-tutorial/ Python 版本: https://scons.org">
 
 
 
@@ -122,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="https://sikongzaixing.github.io/2019/06/04/sublime2markdown/">
+  <link rel="canonical" href="https://sikongzaixing.github.io/2019/06/07/aboutcmake/">
 
 
 
 
 
-  <title>Sublime Text 3 编写 Markdown | 司空在星的博客</title>
+  <title>aboutcmake | 司空在星的博客</title>
   
 
 
@@ -327,7 +326,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://sikongzaixing.github.io/2019/06/04/sublime2markdown/">
+    <link itemprop="mainEntityOfPage" href="https://sikongzaixing.github.io/2019/06/07/aboutcmake/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="司空在星">
@@ -344,7 +343,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Sublime Text 3 编写 Markdown</h1>
+          <h1 class="post-title" itemprop="name headline">aboutcmake</h1>
         
 
         <div class="post-meta">
@@ -356,8 +355,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-03T20:47:40Z">
-                2019-06-03
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-07T10:25:04Z">
+                2019-06-07
               </time>
             
 
@@ -366,28 +365,6 @@
             
           </span>
 
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Sublime/" itemprop="url" rel="index">
-                    <span itemprop="name">Sublime</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -416,76 +393,10 @@
       
 
       
-        <h5 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件 :"></a>安装插件 :</h5><p>​        常规安装 : Markdown Preview , Markdown Editing, Markdown Extended </p>
-<p>Windows: shift+ctrl+p   /  macOS :  shift+command+p 或者点击 Preference -&gt; Package Control  调出命令面板,</p>
-<p>再输入 install , 选择  Package Control: install package</p>
-<h5 id="1、安装-Markdown-Preview-支持在浏览器中预览markdown文件"><a href="#1、安装-Markdown-Preview-支持在浏览器中预览markdown文件" class="headerlink" title="1、安装 Markdown Preview 支持在浏览器中预览markdown文件"></a>1、安装 <a href="https://packagecontrol.io/packages/MarkdownPreview" target="_blank" rel="noopener">Markdown Preview</a> 支持在浏览器中预览markdown文件</h5><pre><code>使用方式:  调出 Package Control 命令面板,输入 mdp ( markdown preview) , 来预览md 文件</code></pre><p>​             设置快捷键, Preference-&gt; key Bindings User </p>
-<p>​            <code>{ &quot;keys&quot;: [&quot;alt+m&quot;], &quot;command&quot;: &quot;markdown_preview&quot;, &quot;args&quot;: {&quot;target&quot;: &quot;browser&quot;, &quot;parser&quot;:&quot;markdown&quot;}  }</code></p>
-<p>​            设置语法高亮和mathjax支持 : Preference-&gt;Color Scheme </p>
-<p>​            mathjax支持(MathJax 是一个能将 LaTeX，MathML 和 AsciiMath 表示的数学式在现代浏览器网页上正确呈现现出来的开源 JavaScript 显示引擎),需要添加代码,如下:</p>
-<p>​            Preference-&gt;Package Setting -&gt; Markdown Preview -&gt; Setting User :</p>
-<pre><code>{
-    /*
-        Enable or not mathjax support.
-    */
-    &quot;enable_mathjax&quot;: true,
-
-    /*
-        Enable or not highlight.js support for syntax highlighting.
-    */
-    &quot;enable_highlight&quot;: true,
-}</code></pre><h5 id="2、安装Markdown-Editing-调出-Package-Control-命令面板-输入-mdi-选择相应的命令"><a href="#2、安装Markdown-Editing-调出-Package-Control-命令面板-输入-mdi-选择相应的命令" class="headerlink" title="2、安装Markdown Editing 调出 Package Control 命令面板,输入 mdi , 选择相应的命令."></a>2、安装<a href="https://packagecontrol.io/packages/MarkdownEditing" target="_blank" rel="noopener">Markdown Editing</a> 调出 Package Control 命令面板,输入 mdi , 选择相应的命令.</h5><h5 id="3、安装-MarkdownTOC-table-of-content"><a href="#3、安装-MarkdownTOC-table-of-content" class="headerlink" title="3、安装 MarkdownTOC   (table of content)"></a>3、安装 <a href="https://packagecontrol.io/packages/MarkdownTOC" target="_blank" rel="noopener">MarkdownTOC</a>   (table of content)</h5><p>​        编写 heading 较多的长文档，希望能够自动生成目录方便跳转，MarkdownTOC 可以帮助我们实现</p>
-<p>​        插件配置在。Setting - User</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;default_autolink&quot;: true,            // 目录以链接形式呈现</span><br><span class="line">  &quot;default_bracket&quot;: &quot;round&quot;,         //目录以链接形式呈现</span><br><span class="line">  &quot;default_depth&quot;: 0                  // 无限目录深度</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h5 id="4、安装-Markdown-Extended-让-Markdown-格式在-Sublime-中支持高亮"><a href="#4、安装-Markdown-Extended-让-Markdown-格式在-Sublime-中支持高亮" class="headerlink" title="4、安装 Markdown Extended  让 Markdown 格式在 Sublime 中支持高亮"></a>4、安装 <a href="https://packagecontrol.io/packages/Markdown%20Extended" target="_blank" rel="noopener">Markdown Extended</a>  让 Markdown 格式在 Sublime 中支持高亮</h5><h5 id="5、安装-MarkdownLivePreview-实时预览Markdown文件，左侧为md文件，右侧为预览结果。"><a href="#5、安装-MarkdownLivePreview-实时预览Markdown文件，左侧为md文件，右侧为预览结果。" class="headerlink" title="5、安装 MarkdownLivePreview :实时预览Markdown文件，左侧为md文件，右侧为预览结果。"></a>5、安装 <a href="https://packagecontrol.io/packages/MarkdownLivePreview" target="_blank" rel="noopener">MarkdownLivePreview</a> :实时预览Markdown文件，左侧为md文件，右侧为预览结果。</h5><p>​    可配合MarkdownEditing一起使用。修改如下:</p>
-<p>​    Preferences -&gt; Package Settings -&gt; MarkdownLivePreview -&gt; Settings 的设置的右侧加一条 “markdown_live_preview_on_open”: true,`，重启sublime即可。</p>
-<h5 id="6、安装-LiveReload-实时刷新网页"><a href="#6、安装-LiveReload-实时刷新网页" class="headerlink" title="6、安装  LiveReload 实时刷新网页"></a>6、安装  <a href="https://packagecontrol.io/packages/LiveReload" target="_blank" rel="noopener">LiveReload</a> 实时刷新网页</h5><h5 id="7、Table-Editor-制表神奇-键入表格是个体力活，Table-Editor-可以帮助我们减轻工作量"><a href="#7、Table-Editor-制表神奇-键入表格是个体力活，Table-Editor-可以帮助我们减轻工作量" class="headerlink" title="7、Table Editor 制表神奇 键入表格是个体力活，Table Editor 可以帮助我们减轻工作量"></a>7、<a href="https://packagecontrol.io/packages/Table%20Editor" target="_blank" rel="noopener">Table Editor</a> 制表神奇 键入表格是个体力活，Table Editor 可以帮助我们减轻工作量</h5><h5 id="8、-OmniMarkupPreviewer-提供了LaTex的数学公式渲染的支持，用浏览器打开以后支持浏览器的实时渲染和更新预览"><a href="#8、-OmniMarkupPreviewer-提供了LaTex的数学公式渲染的支持，用浏览器打开以后支持浏览器的实时渲染和更新预览" class="headerlink" title="8、 OmniMarkupPreviewer 提供了LaTex的数学公式渲染的支持，用浏览器打开以后支持浏览器的实时渲染和更新预览"></a>8、 <a href="https://packagecontrol.io/packages/OmniMarkupPreviewer" target="_blank" rel="noopener">OmniMarkupPreviewer</a> 提供了LaTex的数学公式渲染的支持，用浏览器打开以后支持浏览器的实时渲染和更新预览</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;renderer_options-MarkdownRenderer&quot;:</span><br><span class="line">    &#123;</span><br><span class="line">        &quot;extensions&quot;: [&quot;tables&quot;, &quot;fenced_code&quot;, &quot;codehilite&quot;],</span><br><span class="line">    	&quot;parser&quot;: &quot;markdown&quot;,</span><br><span class="line">    	&quot;enabled_parsers&quot;: [&quot;markdown&quot;]</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><font color="rgb(0,255,255)" size="4">以下解决方案转载自:</font> <a href="http://roux.top/2017/10/11/Markdown编辑器/" target="_blank" rel="noopener">http://roux.top/2017/10/11/Markdown编辑器/</a></li>
-<li><strong>注意：</strong>这个插件在配置完成后，有可能会出现无法使用，并且报错：</li>
-<li><font color="#dd0000">404错误预览…“buffer_id（29）无效（关闭或不支持的文件格式）</font></li>
-</ul>
-<blockquote>
-<ul>
-<li><p>这里给出解决方案(上面的配置文件已经好了)：</p>
-<blockquote>
-<ul>
-<li><p>如上面的配置去掉了原文件 <code>&quot;extensions&quot;: [&quot;tables&quot;, &quot;strikeout&quot;, &quot;fenced_code&quot;, &quot;codehilite&quot;]</code>的<strong>“strikeout”</strong></p>
-</li>
-<li><p>找到python-markdown Sublime Text3的包。</p>
-<blockquote>
-<ul>
-<li>Mac: <code>subl &quot;/Users/&lt;username&gt;/Library/Application Support/Sublime Text 3/Packages/OmniMarkupPreviewer/OmniMarkupLib/Renderers/libs/mdx_strikeout.py&quot;</code></li>
-</ul>
-</blockquote>
-</li>
-</ul>
-</blockquote>
-</li>
-</ul>
-</blockquote>
-<blockquote>
-<blockquote>
-<ul>
-<li>用以下makeExtension()方法替换方法：<br><code>def makeExtension(*args, **kwargs): return StrikeoutExtension(*args, **kwargs)</code></li>
-<li>保存，退出并重新加载升级文本。</li>
-</ul>
-</blockquote>
-</blockquote>
-<blockquote>
-<ul>
-<li><font color="rgb(255,255,200)">链接</font>：<a href="https://github.com/timonwong/OmniMarkupPreviewer/issues/85" target="_blank" rel="noopener">https://github.com/timonwong/OmniMarkupPreviewer/issues/85</a></li>
-</ul>
-</blockquote>
-<ul>
-<li>[OmniMarkupPreviewer]续：<ul>
-<li>打开OmniMarkupPreviewer的默认配置文件Setting-Default</li>
-<li>查看参数：<br><code>&quot;server_host&quot;: &quot;127.0.0.1&quot;,</code> (开启预览服务的 IP 地址, 默认为 localhost)<br><code>&quot;html_template_name&quot;: &quot;github&quot;,</code> (预览使用的模板名称，默认为 Github)<br><code>&quot;browser_command&quot;: [],</code> (预览默认为跟随系统默认浏览器，[“open”, “-a”, “Google Chrome”, “{url}”]亦可利用这样的格式进行指定)<br><code>&quot;ignored_renderers&quot;: [&quot;LiterateHaskellRenderer&quot;],</code>(忽略/关闭的标记语言渲染器)<br><code>&quot;mathjax_enabled&quot;: false,</code>(公式的渲染使用了MathJax库，所以需要在OmniMarkupPreviewer的设置中，将”mathjax_enabled”设置为“true”)</li>
-</ul>
-</li>
-</ul>
+        <p>官方帮助文档:  <a href="https://cmake.org/cmake/help/v3.15/index.html" target="_blank" rel="noopener">https://cmake.org/cmake/help/v3.15/index.html</a></p>
+<p>中文看这里 : <a href="https://www.hahack.com/codes/cmake/" target="_blank" rel="noopener">https://www.hahack.com/codes/cmake/</a></p>
+<p>英文原版: <a href="https://cmake.org/cmake-tutorial/" target="_blank" rel="noopener">https://cmake.org/cmake-tutorial/</a></p>
+<p>Python 版本: <a href="https://scons.org" target="_blank" rel="noopener">https://scons.org</a></p>
 
       
     </div>
@@ -501,12 +412,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/Sublime/" rel="tag"># Sublime</a>
-          
-        </div>
-      
 
       
       
@@ -516,8 +421,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/06/04/test/" rel="next" title="Hexo 加入图片无法显示--解决方案">
-                <i class="fa fa-chevron-left"></i> Hexo 加入图片无法显示--解决方案
+              <a href="/2019/06/04/sublime2markdown/" rel="next" title="Sublime Text 3 编写 Markdown">
+                <i class="fa fa-chevron-left"></i> Sublime Text 3 编写 Markdown
               </a>
             
           </div>
@@ -525,10 +430,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/06/07/aboutcmake/" rel="prev" title="aboutcmake">
-                aboutcmake <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -580,17 +481,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -715,22 +607,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#安装插件"><span class="nav-number">1.</span> <span class="nav-text">安装插件 :</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1、安装-Markdown-Preview-支持在浏览器中预览markdown文件"><span class="nav-number">2.</span> <span class="nav-text">1、安装 Markdown Preview 支持在浏览器中预览markdown文件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2、安装Markdown-Editing-调出-Package-Control-命令面板-输入-mdi-选择相应的命令"><span class="nav-number">3.</span> <span class="nav-text">2、安装Markdown Editing 调出 Package Control 命令面板,输入 mdi , 选择相应的命令.</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3、安装-MarkdownTOC-table-of-content"><span class="nav-number">4.</span> <span class="nav-text">3、安装 MarkdownTOC   (table of content)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4、安装-Markdown-Extended-让-Markdown-格式在-Sublime-中支持高亮"><span class="nav-number">5.</span> <span class="nav-text">4、安装 Markdown Extended  让 Markdown 格式在 Sublime 中支持高亮</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#5、安装-MarkdownLivePreview-实时预览Markdown文件，左侧为md文件，右侧为预览结果。"><span class="nav-number">6.</span> <span class="nav-text">5、安装 MarkdownLivePreview :实时预览Markdown文件，左侧为md文件，右侧为预览结果。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#6、安装-LiveReload-实时刷新网页"><span class="nav-number">7.</span> <span class="nav-text">6、安装  LiveReload 实时刷新网页</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#7、Table-Editor-制表神奇-键入表格是个体力活，Table-Editor-可以帮助我们减轻工作量"><span class="nav-number">8.</span> <span class="nav-text">7、Table Editor 制表神奇 键入表格是个体力活，Table Editor 可以帮助我们减轻工作量</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#8、-OmniMarkupPreviewer-提供了LaTex的数学公式渲染的支持，用浏览器打开以后支持浏览器的实时渲染和更新预览"><span class="nav-number">9.</span> <span class="nav-text">8、 OmniMarkupPreviewer 提供了LaTex的数学公式渲染的支持，用浏览器打开以后支持浏览器的实时渲染和更新预览</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
