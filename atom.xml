@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sikongzaixing.github.io/"/>
-  <updated>2019-06-07T05:36:02.612Z</updated>
+  <updated>2019-06-07T06:57:34.884Z</updated>
   <id>https://sikongzaixing.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://sikongzaixing.github.io/2019/06/07/aboutcmake/"/>
     <id>https://sikongzaixing.github.io/2019/06/07/aboutcmake/</id>
     <published>2019-06-07T10:25:04.000Z</published>
-    <updated>2019-06-07T05:36:02.612Z</updated>
+    <updated>2019-06-07T06:57:34.884Z</updated>
     
     <content type="html"><![CDATA[<p>官方帮助文档:  <a href="https://cmake.org/cmake/help/v3.15/index.html" target="_blank" rel="noopener">https://cmake.org/cmake/help/v3.15/index.html</a></p><p>中文看这里 : <a href="https://www.hahack.com/codes/cmake/" target="_blank" rel="noopener">https://www.hahack.com/codes/cmake/</a></p><p>英文原版: <a href="https://cmake.org/cmake-tutorial/" target="_blank" rel="noopener">https://cmake.org/cmake-tutorial/</a></p><p>Python 版本: <a href="https://scons.org" target="_blank" rel="noopener">https://scons.org</a></p>]]></content>
     
@@ -34,6 +34,10 @@
     
     </summary>
     
+      <category term="CMake" scheme="https://sikongzaixing.github.io/categories/CMake/"/>
+    
+    
+      <category term="CMake" scheme="https://sikongzaixing.github.io/tags/CMake/"/>
     
   </entry>
   
