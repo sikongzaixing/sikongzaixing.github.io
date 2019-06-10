@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="mult-thread,">
+  <meta name="keywords" content="c++,">
 
 
 
@@ -82,14 +82,14 @@
 
 
 <meta name="description" content="C++11 多线程C++11 多线程相关的头文件 :https://en.cppreference.com/w/cpp/thread C++11 新标准中引入了四个头文件来支持多线程编程 ​        &amp;lt;atomic&amp;gt;,&amp;lt;mutex&amp;gt;,&amp;lt;condition_variable&amp;gt;,&amp;lt;future&amp;gt;  &amp;lt;atomic&amp;gt; 该头文主要声明了两个">
-<meta name="keywords" content="mult-thread">
+<meta name="keywords" content="c++">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C++11 多线程">
 <meta property="og:url" content="https://sikongzaixing.github.io/2019/06/09/mult-thread/index.html">
 <meta property="og:site_name" content="司空在星的博客">
 <meta property="og:description" content="C++11 多线程C++11 多线程相关的头文件 :https://en.cppreference.com/w/cpp/thread C++11 新标准中引入了四个头文件来支持多线程编程 ​        &amp;lt;atomic&amp;gt;,&amp;lt;mutex&amp;gt;,&amp;lt;condition_variable&amp;gt;,&amp;lt;future&amp;gt;  &amp;lt;atomic&amp;gt; 该头文主要声明了两个">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-06-08T11:00:40.353Z">
+<meta property="og:updated_time" content="2019-06-10T10:21:36.930Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C++11 多线程">
 <meta name="twitter:description" content="C++11 多线程C++11 多线程相关的头文件 :https://en.cppreference.com/w/cpp/thread C++11 新标准中引入了四个头文件来支持多线程编程 ​        &amp;lt;atomic&amp;gt;,&amp;lt;mutex&amp;gt;,&amp;lt;condition_variable&amp;gt;,&amp;lt;future&amp;gt;  &amp;lt;atomic&amp;gt; 该头文主要声明了两个">
@@ -426,14 +426,14 @@
 <li><code>&lt;future&gt;</code> 该头文件主要声明了 std::promise, std::package_task 两个 Provider 类，以及 std::future 和 std::shared_future 两个 Future 类，另外还有一些与之相关的类型和函数，std::async() 函数就声明在此头文件中。</li>
 </ul>
 <p>第一个实例:</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// MacOS  Mojave 10.14.5</span></span><br><span class="line"><span class="comment">// c++ cppthread.cpp -o main -std=c++11</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;thread&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">threadfoo</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"threadfoo"</span> &lt;&lt; <span class="string">"\n"</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">		<span class="comment">// default construcror , t1 is not a thread ,t.joinable()==false </span></span><br><span class="line">    <span class="built_in">std</span>::thread t1; </span><br><span class="line">   	<span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="built_in">std</span>::boolalpha &lt;&lt; t1.joinable() &lt;&lt; <span class="string">"\n"</span>;</span><br><span class="line"></span><br><span class="line">   	<span class="comment">// joinable == true</span></span><br><span class="line">		<span class="built_in">std</span>::<span class="function">thread <span class="title">t2</span><span class="params">(threadfoo)</span></span>;</span><br><span class="line">   	<span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="built_in">std</span>::boolalpha &lt;&lt; t2.joinable() &lt;&lt; <span class="string">"\n"</span>;</span><br><span class="line"></span><br><span class="line">   	t2.join();</span><br><span class="line">   	<span class="comment">// joinable == false</span></span><br><span class="line">   	<span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="built_in">std</span>::boolalpha &lt;&lt; t2.joinable() &lt;&lt; <span class="string">"\n"</span>;</span><br><span class="line"></span><br><span class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// MacOS  Mojave 10.14.5</span></span><br><span class="line"><span class="comment">// c++ cppthread.cpp -o main -std=c++11</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;thread&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">threadfoo</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"threadfoo"</span> &lt;&lt; <span class="string">"\n"</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">		<span class="comment">// default construcror , t1 is not a thread ,t.joinable()==false </span></span><br><span class="line">   	<span class="built_in">std</span>::thread t1; </span><br><span class="line">   	<span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="built_in">std</span>::boolalpha &lt;&lt; t1.joinable() &lt;&lt; <span class="string">"\n"</span>;</span><br><span class="line"></span><br><span class="line">   	<span class="comment">// joinable == true</span></span><br><span class="line">		<span class="built_in">std</span>::<span class="function">thread <span class="title">t2</span><span class="params">(threadfoo)</span></span>;</span><br><span class="line">   	<span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="built_in">std</span>::boolalpha &lt;&lt; t2.joinable() &lt;&lt; <span class="string">"\n"</span>;</span><br><span class="line"></span><br><span class="line">   	t2.join();</span><br><span class="line">   	<span class="comment">// joinable == false</span></span><br><span class="line">   	<span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="built_in">std</span>::boolalpha &lt;&lt; t2.joinable() &lt;&lt; <span class="string">"\n"</span>;</span><br><span class="line"></span><br><span class="line">   	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h3 id="atomic-相关"><a href="#atomic-相关" class="headerlink" title="atomic  相关:"></a>atomic  相关:</h3><p> <a href="https://en.cppreference.com/w/cpp/atomic/atomic" target="_blank" rel="noopener">https://en.cppreference.com/w/cpp/atomic/atomic</a></p>
 <p> 1、 atomic , atomic_ref , atomic_flag</p>
 <p> 官方原文:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Each instantiation and full specialization of the `std::atomic` template defines an atomic type. If one thread writes to an atomic object while another thread reads from it, the behavior is well-defined (see [memory model](https://en.cppreference.com/w/cpp/language/memory_model) for details on data races)</span><br><span class="line"></span><br><span class="line">In addition, accesses to atomic objects may establish inter-thread synchronization and order non-atomic memory accesses as specified by [std::memory_order](https://en.cppreference.com/w/cpp/atomic/memory_order).</span><br><span class="line"></span><br><span class="line">std::atomic is neither copyable nor movable.</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">std :: atomic模板的每个实例化和完全特化都定义了一个原子类型。如果一个线程写入原子对象而另一个线程从中读取，则行为是明确定义的（有关数据争用的详细信息，请参阅内存模型）</span><br><span class="line">此外，对原子对象的访问可以建立线程间同步并按std :: memory_order的指定顺序进行非原子内存访问。</span><br><span class="line">std::atomic既不可复制也不可移动。</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">std :: atomic模板的每个实例化和完全特化都定义了一个原子类型。如果一个线程写入原子对象而另一个线程从中读取，则行为是明确定义的（有关数据争用的详细信息，请参阅内存模型）</span><br><span class="line">此外，对原子对象的访问可以建立线程间同步并按 std::memory_order 的指定顺序进行非原子内存访问。</span><br><span class="line">std::atomic既不可复制也不可移动。</span><br></pre></td></tr></table></figure>
 
 <table>
 <thead>
@@ -459,6 +459,28 @@
 <td></td>
 </tr>
 </tbody></table>
+<p>第一种形式的模版类型必须T是 TriviallyCopyable ,  类型必须满足以下条件:</p>
+<ul>
+<li><a href="http://en.cppreference.com/w/cpp/types/is_trivially_copyable" target="_blank" rel="noopener">std::is_trivially_copyable</a><t>::value</t></li>
+<li><a href="http://en.cppreference.com/w/cpp/types/is_copy_constructible" target="_blank" rel="noopener">std::is_copy_constructible</a><t>::value</t></li>
+<li><a href="http://en.cppreference.com/w/cpp/types/is_move_constructible" target="_blank" rel="noopener">std::is_move_constructible</a><t>::value</t></li>
+<li><a href="http://en.cppreference.com/w/cpp/types/is_copy_assignable" target="_blank" rel="noopener">std::is_copy_assignable</a><t>::value</t></li>
+<li><a href="http://en.cppreference.com/w/cpp/types/is_move_assignable" target="_blank" rel="noopener">std::is_move_assignable</a><t>::value</t></li>
+</ul>
+<p>The program is ill-formed if any of following values is <code>false</code>: </p>
+<p>出现以下错误: </p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">error: _Atomic cannot be applied to <span class="built_in">type</span> <span class="string">'**'</span> <span class="built_in">which</span> is not trivially copyable</span><br></pre></td></tr></table></figure>
+
+<p>memory_order: </p>
+<p>对于atomic对象操作有6种memory ordering  选项，</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="keyword">enum</span> memory_order &#123;</span><br><span class="line">    memory_order_relaxed,</span><br><span class="line">    memory_order_consume,</span><br><span class="line">    memory_order_acquire,</span><br><span class="line">    memory_order_release,</span><br><span class="line">    memory_order_acq_rel,</span><br><span class="line">    memory_order_seq_cst</span><br><span class="line">&#125; memory_order;</span><br></pre></td></tr></table></figure>
+
+<p>默认情况下的为 memory_order_seq_cst。尽管有 6种选项，但是它们代表三种模型：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">sequentially-consistent ordering(memory<span class="emphasis">_order_</span>seq_cst)</span><br><span class="line">acquire-release ordering(</span><br><span class="line"><span class="code">		memory_order_consume,</span></span><br><span class="line"><span class="code">		memory_order_acquire,</span></span><br><span class="line"><span class="code">		memory_order_release, </span></span><br><span class="line"><span class="code">		memory_order_acq_rel)</span></span><br><span class="line">relaxed ordering (memory<span class="emphasis">_order_</span>relaxed)。</span><br></pre></td></tr></table></figure>
+
+<p>另外需要注意的是对于不同的memory ordering运行 在不同的cpu架构的机器上运行的代价是不一样的，</p>
+<p>比如对于对同步指令的需求  sequentially-consistent ordering模型大于acquire-release ordering或者relaxed ordering ，acquire-release ordering大于relaxed ordering ；</p>
+<p>如果是运行在多处理器的操作系统上面，这些额外的同步指令开销可能会消耗重要的 cpu时间，从而造成总体系统性能的下降。对于x86或 x86-64架构的处理器在使用 acquire-release模型的时候不需要任何额外的指令开销，甚至是对于比较严格的sequentially consisten ordering 也不需要特殊处理，并且花费的代价也很少。</p>
 
       
     </div>
@@ -476,7 +498,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/mult-thread/" rel="tag"># mult-thread</a>
+            <a href="/tags/c/" rel="tag"># c++</a>
           
         </div>
       
@@ -498,6 +520,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/06/09/todolist/" rel="prev" title="todolist">
+                todolist <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -578,7 +604,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -589,7 +615,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
