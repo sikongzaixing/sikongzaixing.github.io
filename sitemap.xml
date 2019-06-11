@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://sikongzaixing.github.io/2019/06/11/cpp11mutex/</loc>
+    
+    <lastmod>2019-06-11T08:52:10.079Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://sikongzaixing.github.io/2019/06/09/mult-thread/</loc>
     
-    <lastmod>2019-06-11T02:57:12.314Z</lastmod>
+    <lastmod>2019-06-11T04:11:34.159Z</lastmod>
     
   </url>
   
