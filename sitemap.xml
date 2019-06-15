@@ -2,16 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://sikongzaixing.github.io/2019/06/09/LinuxCommond/</loc>
+    
+    <lastmod>2019-06-15T09:56:30.449Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://sikongzaixing.github.io/2019/06/09/Linux-mult-thread/</loc>
+    
+    <lastmod>2019-06-14T02:28:27.665Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://sikongzaixing.github.io/2019/06/11/cpp11mutex/</loc>
     
-    <lastmod>2019-06-11T13:59:44.048Z</lastmod>
+    <lastmod>2019-06-14T02:28:17.164Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://sikongzaixing.github.io/2019/06/09/mult-threadQ/</loc>
+    
+    <lastmod>2019-06-13T13:27:32.444Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://sikongzaixing.github.io/2019/06/07/cpp11/</loc>
     
-    <lastmod>2019-06-11T09:17:21.860Z</lastmod>
+    <lastmod>2019-06-13T13:02:13.194Z</lastmod>
     
   </url>
   
