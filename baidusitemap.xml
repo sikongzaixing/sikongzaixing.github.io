@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sikongzaixing.github.io/2019/06/09/LinuxCommond/</loc>
-    <lastmod>2019-06-15</lastmod>
+    <loc>https://sikongzaixing.github.io/2019/06/09/ZThread/</loc>
+    <lastmod>2019-06-21</lastmod>
   </url>  <url>
     <loc>https://sikongzaixing.github.io/2019/06/09/Linux-mult-thread/</loc>
-    <lastmod>2019-06-14</lastmod>
+    <lastmod>2019-06-18</lastmod>
+  </url>  <url>
+    <loc>https://sikongzaixing.github.io/2019/06/09/Asio/</loc>
+    <lastmod>2019-06-15</lastmod>
+  </url>  <url>
+    <loc>https://sikongzaixing.github.io/2019/06/09/LinuxCommond/</loc>
+    <lastmod>2019-06-15</lastmod>
   </url>  <url>
     <loc>https://sikongzaixing.github.io/2019/06/11/cpp11mutex/</loc>
     <lastmod>2019-06-14</lastmod>
