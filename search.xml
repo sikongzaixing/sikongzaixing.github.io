@@ -80,6 +80,31 @@
     
     <entry>
       <title>Linux 多线程</title>
+      <link href="/2019/06/09/Linux-mult-thread/"/>
+      <url>/2019/06/09/Linux-mult-thread/</url>
+      
+        <content type="html"><![CDATA[<p>轻量级线程库    ZThread:       <a href="https://sourceforge.net/projects/zthread/" target="_blank" rel="noopener">https://sourceforge.net/projects/zthread/</a></p><p>陈硕的线程库:  <a href="https://blog.csdn.net/solstice/article/details/5829421" target="_blank" rel="noopener">https://blog.csdn.net/solstice/article/details/5829421</a></p><p>Boost 中的线程库</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> mult-thread </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> c++ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Linux 多线程</title>
       <link href="/2019/06/09/LinuxCommond/"/>
       <url>/2019/06/09/LinuxCommond/</url>
       
@@ -114,31 +139,6 @@
       <categories>
           
           <category> 线程库 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> c++ </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Linux 多线程</title>
-      <link href="/2019/06/09/Linux-mult-thread/"/>
-      <url>/2019/06/09/Linux-mult-thread/</url>
-      
-        <content type="html"><![CDATA[<p>轻量级线程库    ZThread:       <a href="https://sourceforge.net/projects/zthread/" target="_blank" rel="noopener">https://sourceforge.net/projects/zthread/</a></p><p>陈硕的线程库:  <a href="https://blog.csdn.net/solstice/article/details/5829421" target="_blank" rel="noopener">https://blog.csdn.net/solstice/article/details/5829421</a></p><p>Boost 中的线程库</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> mult-thread </category>
           
       </categories>
       
@@ -229,31 +229,6 @@
     
     
     <entry>
-      <title>aboutcmake</title>
-      <link href="/2019/06/07/aboutcmake/"/>
-      <url>/2019/06/07/aboutcmake/</url>
-      
-        <content type="html"><![CDATA[<p>官方帮助文档:  <a href="https://cmake.org/cmake/help/v3.15/index.html" target="_blank" rel="noopener">https://cmake.org/cmake/help/v3.15/index.html</a></p><p>中文看这里 : <a href="https://www.hahack.com/codes/cmake/" target="_blank" rel="noopener">https://www.hahack.com/codes/cmake/</a></p><p>英文原版: <a href="https://cmake.org/cmake-tutorial/" target="_blank" rel="noopener">https://cmake.org/cmake-tutorial/</a></p><p>Python 版本: <a href="https://scons.org" target="_blank" rel="noopener">https://scons.org</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> CMake </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> CMake </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>C++11 新特性</title>
       <link href="/2019/06/07/cpp11/"/>
       <url>/2019/06/07/cpp11/</url>
@@ -279,6 +254,31 @@
     
     
     <entry>
+      <title>aboutcmake</title>
+      <link href="/2019/06/07/aboutcmake/"/>
+      <url>/2019/06/07/aboutcmake/</url>
+      
+        <content type="html"><![CDATA[<p>官方帮助文档:  <a href="https://cmake.org/cmake/help/v3.15/index.html" target="_blank" rel="noopener">https://cmake.org/cmake/help/v3.15/index.html</a></p><p>中文看这里 : <a href="https://www.hahack.com/codes/cmake/" target="_blank" rel="noopener">https://www.hahack.com/codes/cmake/</a></p><p>英文原版: <a href="https://cmake.org/cmake-tutorial/" target="_blank" rel="noopener">https://cmake.org/cmake-tutorial/</a></p><p>Python 版本: <a href="https://scons.org" target="_blank" rel="noopener">https://scons.org</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> CMake </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> CMake </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Sublime Text 3 编写 Markdown</title>
       <link href="/2019/06/04/sublime2markdown/"/>
       <url>/2019/06/04/sublime2markdown/</url>
@@ -296,6 +296,31 @@
         <tags>
             
             <tag> Sublime </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>使用说明</title>
+      <link href="/2019/06/04/howtodo/"/>
+      <url>/2019/06/04/howtodo/</url>
+      
+        <content type="html"><![CDATA[<p>1、 MacOS 系统 命令行:</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
             
         </tags>
       

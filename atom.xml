@@ -94,6 +94,31 @@
   
   <entry>
     <title>Linux 多线程</title>
+    <link href="https://sikongzaixing.github.io/2019/06/09/Linux-mult-thread/"/>
+    <id>https://sikongzaixing.github.io/2019/06/09/Linux-mult-thread/</id>
+    <published>2019-06-08T19:02:09.000Z</published>
+    <updated>2019-06-18T03:10:30.486Z</updated>
+    
+    <content type="html"><![CDATA[<p>轻量级线程库    ZThread:       <a href="https://sourceforge.net/projects/zthread/" target="_blank" rel="noopener">https://sourceforge.net/projects/zthread/</a></p><p>陈硕的线程库:  <a href="https://blog.csdn.net/solstice/article/details/5829421" target="_blank" rel="noopener">https://blog.csdn.net/solstice/article/details/5829421</a></p><p>Boost 中的线程库</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;轻量级线程库    ZThread:       &lt;a href=&quot;https://sourceforge.net/projects/zthread/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://sourceforge.net/proje
+      
+    
+    </summary>
+    
+      <category term="mult-thread" scheme="https://sikongzaixing.github.io/categories/mult-thread/"/>
+    
+    
+      <category term="c++" scheme="https://sikongzaixing.github.io/tags/c/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux 多线程</title>
     <link href="https://sikongzaixing.github.io/2019/06/09/LinuxCommond/"/>
     <id>https://sikongzaixing.github.io/2019/06/09/LinuxCommond/</id>
     <published>2019-06-08T19:02:09.000Z</published>
@@ -136,31 +161,6 @@
     </summary>
     
       <category term="线程库" scheme="https://sikongzaixing.github.io/categories/%E7%BA%BF%E7%A8%8B%E5%BA%93/"/>
-    
-    
-      <category term="c++" scheme="https://sikongzaixing.github.io/tags/c/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux 多线程</title>
-    <link href="https://sikongzaixing.github.io/2019/06/09/Linux-mult-thread/"/>
-    <id>https://sikongzaixing.github.io/2019/06/09/Linux-mult-thread/</id>
-    <published>2019-06-08T19:02:09.000Z</published>
-    <updated>2019-06-18T03:10:30.486Z</updated>
-    
-    <content type="html"><![CDATA[<p>轻量级线程库    ZThread:       <a href="https://sourceforge.net/projects/zthread/" target="_blank" rel="noopener">https://sourceforge.net/projects/zthread/</a></p><p>陈硕的线程库:  <a href="https://blog.csdn.net/solstice/article/details/5829421" target="_blank" rel="noopener">https://blog.csdn.net/solstice/article/details/5829421</a></p><p>Boost 中的线程库</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;轻量级线程库    ZThread:       &lt;a href=&quot;https://sourceforge.net/projects/zthread/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://sourceforge.net/proje
-      
-    
-    </summary>
-    
-      <category term="mult-thread" scheme="https://sikongzaixing.github.io/categories/mult-thread/"/>
     
     
       <category term="c++" scheme="https://sikongzaixing.github.io/tags/c/"/>
@@ -244,31 +244,6 @@
   </entry>
   
   <entry>
-    <title>aboutcmake</title>
-    <link href="https://sikongzaixing.github.io/2019/06/07/aboutcmake/"/>
-    <id>https://sikongzaixing.github.io/2019/06/07/aboutcmake/</id>
-    <published>2019-06-07T10:25:04.000Z</published>
-    <updated>2019-06-07T06:57:34.884Z</updated>
-    
-    <content type="html"><![CDATA[<p>官方帮助文档:  <a href="https://cmake.org/cmake/help/v3.15/index.html" target="_blank" rel="noopener">https://cmake.org/cmake/help/v3.15/index.html</a></p><p>中文看这里 : <a href="https://www.hahack.com/codes/cmake/" target="_blank" rel="noopener">https://www.hahack.com/codes/cmake/</a></p><p>英文原版: <a href="https://cmake.org/cmake-tutorial/" target="_blank" rel="noopener">https://cmake.org/cmake-tutorial/</a></p><p>Python 版本: <a href="https://scons.org" target="_blank" rel="noopener">https://scons.org</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;官方帮助文档:  &lt;a href=&quot;https://cmake.org/cmake/help/v3.15/index.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://cmake.org/cmake/help/v3.15/index.
-      
-    
-    </summary>
-    
-      <category term="CMake" scheme="https://sikongzaixing.github.io/categories/CMake/"/>
-    
-    
-      <category term="CMake" scheme="https://sikongzaixing.github.io/tags/CMake/"/>
-    
-  </entry>
-  
-  <entry>
     <title>C++11 新特性</title>
     <link href="https://sikongzaixing.github.io/2019/06/07/cpp11/"/>
     <id>https://sikongzaixing.github.io/2019/06/07/cpp11/</id>
@@ -295,6 +270,31 @@
   </entry>
   
   <entry>
+    <title>aboutcmake</title>
+    <link href="https://sikongzaixing.github.io/2019/06/07/aboutcmake/"/>
+    <id>https://sikongzaixing.github.io/2019/06/07/aboutcmake/</id>
+    <published>2019-06-07T10:25:04.000Z</published>
+    <updated>2019-06-07T06:57:34.884Z</updated>
+    
+    <content type="html"><![CDATA[<p>官方帮助文档:  <a href="https://cmake.org/cmake/help/v3.15/index.html" target="_blank" rel="noopener">https://cmake.org/cmake/help/v3.15/index.html</a></p><p>中文看这里 : <a href="https://www.hahack.com/codes/cmake/" target="_blank" rel="noopener">https://www.hahack.com/codes/cmake/</a></p><p>英文原版: <a href="https://cmake.org/cmake-tutorial/" target="_blank" rel="noopener">https://cmake.org/cmake-tutorial/</a></p><p>Python 版本: <a href="https://scons.org" target="_blank" rel="noopener">https://scons.org</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;官方帮助文档:  &lt;a href=&quot;https://cmake.org/cmake/help/v3.15/index.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://cmake.org/cmake/help/v3.15/index.
+      
+    
+    </summary>
+    
+      <category term="CMake" scheme="https://sikongzaixing.github.io/categories/CMake/"/>
+    
+    
+      <category term="CMake" scheme="https://sikongzaixing.github.io/tags/CMake/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Sublime Text 3 编写 Markdown</title>
     <link href="https://sikongzaixing.github.io/2019/06/04/sublime2markdown/"/>
     <id>https://sikongzaixing.github.io/2019/06/04/sublime2markdown/</id>
@@ -316,6 +316,32 @@
     
     
       <category term="Sublime" scheme="https://sikongzaixing.github.io/tags/Sublime/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用说明</title>
+    <link href="https://sikongzaixing.github.io/2019/06/04/howtodo/"/>
+    <id>https://sikongzaixing.github.io/2019/06/04/howtodo/</id>
+    <published>2019-06-03T19:29:13.000Z</published>
+    <updated>2019-07-13T08:29:43.920Z</updated>
+    
+    <content type="html"><![CDATA[<p>1、 MacOS 系统 命令行:</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;1、 MacOS 系统 命令行:&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="Hexo" scheme="https://sikongzaixing.github.io/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="https://sikongzaixing.github.io/tags/Hexo/"/>
     
   </entry>
   
